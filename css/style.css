@@ -5,7 +5,10 @@
 * Browsers: last 4 version
 */
 
-
+html,body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
     line-height: 1;
 }
