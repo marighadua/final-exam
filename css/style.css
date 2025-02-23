@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+
 body {
     line-height: 1;
 }
@@ -109,6 +110,10 @@ header {
     font-size: 25px;
     color: black;
 }
+
+.fa-regular:hover {
+    color: red;
+}
 .fa-solid {
     font-size: 25px;
     color: black;
@@ -119,6 +124,7 @@ header {
 }
 #burgerbar {
     display: none;
+
 }
 /* section1 */
  .section1 {
@@ -198,7 +204,8 @@ header {
     place-content: start;
     place-content: center;
     gap:20px;
-    width: 1054px;
+    max-width:1054px;
+    width: 100%;
 
     
 }
@@ -225,7 +232,7 @@ header {
     background-color: rgb(82, 17, 17);
     position: relative;
     text-align: center;
-    /* padding: 56px 0; */
+    
 }
 .container2 {
     width: 100%;
@@ -276,6 +283,7 @@ header {
 
 }
 .wraper-menu {
+    display: -ms-grid ;
     display: -ms-grid ;
     display: grid ;
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
@@ -533,7 +541,7 @@ footer {
 }
 .footer-div {
     max-width: 1728px;
-    width: 90%;
+    width: 80%;
     height: 477px;
     margin: 0 auto; 
     
@@ -545,10 +553,11 @@ footer {
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
-   -webkit-box-pack:justify;
+   /* -webkit-box-pack:justify;
        -ms-flex-pack:justify;
-           justify-content:space-between;
+           justify-content:space-between; */
    padding-top: 55px;
+   gap: 30px;
 
 }
 .icons {
@@ -566,14 +575,33 @@ footer {
     color: black;
 }
 .footer-text-box1 {
-   width: 515px;
+    max-width: 515px;
+   width: 100%;
    color: #fff;
    display: -ms-grid;
    display: grid;
    gap: 10px;
    
 }
-.h4-footer {
+.follow-us-footer {
+    font-size: 25px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.about-us-footer {
+    font-size: 25px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.contact-us-footer {
+    font-size: 25px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.subscribe-footer {
     font-size: 25px;
     font-family: "Poppins", serif;
     font-weight: 700;
@@ -581,7 +609,8 @@ footer {
 }
 
 .footer-text-box2 {
-   width: 424px;
+    max-width: 424px;
+    width: 100%;
    color: #fff;
    display: -ms-grid;
    display: grid;
@@ -597,35 +626,39 @@ footer {
     row-gap: 10px;
     padding-bottom: 75px;
 }
-.contact-a {
+.contacts {
     color: black;
 }
 
 .footer-text-box3 {
-   width: 394px;
+   max-width: 394px;
+   width: 100%;
    color: #fff;
    display: -ms-grid;
    display: grid;
    gap: 10px;
 }
-.label-f {
+.label-footer {
     font-size: 20px;
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
+
 }
-.input-f {
+.input-footer {
     font-size: 18px;
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
     color: blue;
+    outline: none;
 }
 .btn-footer {
     width: 151px;
     height: 60px;
     border-radius: 15px;
     font-size: 20px;
+
 }
 .btn-footer:hover {
     background-color: #6b0608;
@@ -648,12 +681,14 @@ footer {
     font-style: normal;
     
 }
-.p-email {
+.parag-email {
    font-family: "Poppins", serif;
     font-weight: 400;
     font-style: italic;
-  
 } 
+.parag-email:hover {
+    color: blue;
+}
 /* resposive   */
 
 @media (max-width: 1440px) {
@@ -664,7 +699,7 @@ footer {
                 flex-direction: column-reverse;
     }
     .text-box-sec1 {
-        /* display: none; */
+        display: none;
     }
     
      .about-us {
@@ -718,6 +753,9 @@ footer {
         text-align: center;
     }
     .footer-texts {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -726,13 +764,13 @@ footer {
             -ms-flex-pack: center;
                 justify-content: center;
         width: 80%;
-        font-size: 18px;
+        font-size: 16px;
         row-gap: 20px;
     }
     
      .bottom-div {
     
-        padding: 20px 0;
+        padding: 10px 0;
      }
      .copyr {
         display: none;
@@ -786,29 +824,54 @@ footer {
         
         grid-template-columns:  1fr;
     }
+    .footer-text-box3 {
+        width: 80%;;
+    }
     } 
 
 @media (max-width: 480px) {
-    /* .box-element {
+    #parag-none {
+        display: none;
+    }
+    .header-div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    .footer-div {
+        width: 80%;
+    }
+    .box-element {
       width: 80%;
-    } */
+    }
     .navigation {
       display: none;
     }
+    
     .navigation.activeNav {
         display: block;
         position: absolute;
-        top: 15px;
-        left: 0;
+        padding: 75px;
+        
 
+    }
+    .footer-text-box3 {
+        display: -ms-grid;
+        display: grid;
     }
     .left-div {
       display: none;
     }
     #burgerbar {
-      display: block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       position: absolute;
-      top: 15px;
+      padding: 30px 0;
+      top:15px;
       right: 15px;
     }
     
@@ -832,12 +895,13 @@ footer {
         -webkit-box-align: start;
             -ms-flex-align: start;
                 align-items: start;
-        row-gap: 20px;
-        width: 100%;
+        
+        width: 60%;
+        font-size: 16px;
         
     }
-    .p-email {
-        display: none;
+    .btn-footer {
+        display: block;
     }
     .header-div {
         -webkit-box-orient: vertical;
@@ -853,6 +917,12 @@ footer {
                 flex-direction: column;
     }
     .span-sell {
+        display: none;
+    }
+    .cosmetics {
+        display: none;
+    }
+    .accessories {
         display: none;
     }
     
