@@ -544,7 +544,7 @@ footer {
 }
 .footer-div {
     max-width: 1728px;
-    width: 80%;
+    width: 90%;
     height: 477px;
     margin: 0 auto; 
     
@@ -778,9 +778,10 @@ footer {
      .copyr {
         display: none;
      }
-     .form-el{
+     
+     .footer-text-box3 {
         display: none;
-     }
+    }
      .btn-footer {
         display: none;
      }
@@ -827,9 +828,7 @@ footer {
         
         grid-template-columns:  1fr;
     }
-    .footer-text-box3 {
-        width: 80%;;
-    }
+
     } 
 
 @media (max-width: 480px) {
@@ -860,10 +859,6 @@ footer {
         padding: 75px;
         
 
-    }
-    .footer-text-box3 {
-        display: -ms-grid;
-        display: grid;
     }
     .left-div {
       display: none;
